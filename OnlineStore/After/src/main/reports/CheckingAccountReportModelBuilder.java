@@ -3,17 +3,14 @@ package reports;
 public class CheckingAccountReportModelBuilder extends IAmReportModelBuilder<CheckingAccount> {
 
     protected IAmReportModelBuilder createHeader(CheckingAccount model) {
-
-        // crear encabezado del checkingaccpunt report
-
-        return this;
+        return null;
     }
 
     protected IAmReportModelBuilder createBody(CheckingAccount model) {
-        return this;
+        return null;
     }
 
     protected IAmReportModelBuilder createFooter(CheckingAccount model) {
-        return this;
+        return null;
     }
 }

@@ -12,8 +12,9 @@ public abstract class IAmReportModelBuilder<T> {
               .createBody(model)
               .createFooter(model);
         return report;
-
     }
+
+
     protected abstract IAmReportModelBuilder createHeader(T model);
     protected abstract IAmReportModelBuilder createBody(T model);
     protected abstract IAmReportModelBuilder createFooter(T model);

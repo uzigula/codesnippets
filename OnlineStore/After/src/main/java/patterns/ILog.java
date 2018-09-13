@@ -1,7 +1,5 @@
 package patterns;
 
-import patterns.crosscuttingconcerns.BGExpectedException;
-
 public interface ILog {
     void Debug(String exexuting_, Object command);
 

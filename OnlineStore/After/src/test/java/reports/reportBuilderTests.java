@@ -3,6 +3,8 @@ package reports;
 import org.junit.*;
 import org.junit.rules.ExpectedException;
 
+import reports.*;
+
 import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.core.StringContains.containsString;
 

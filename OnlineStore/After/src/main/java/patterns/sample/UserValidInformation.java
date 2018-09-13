@@ -1,7 +1,6 @@
 package patterns.sample;
 
 import lombok.Getter;
-import patterns.IAmCommand;
 
 @Getter
 public class UserValidInformation {

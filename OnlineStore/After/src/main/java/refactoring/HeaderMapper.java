@@ -2,10 +2,6 @@ package refactoring;
 
 import java.util.Map;
 
-import static refactoring.ProductType.CHECKING_ACCOUNT;
-import static refactoring.ProductType.CREDIT_CARD;
-import static refactoring.ProductType.SAVINGS_ACCOUNT;
-
 
 public class HeaderMapper extends BuilderConstant {
 
@@ -39,7 +35,7 @@ public class HeaderMapper extends BuilderConstant {
 
         reportModel.setMaskedNumber(ReflectionUtil.getPropertyString(inputObject, MASKED_NUMBER));
 
-        if (type == SAVINGS_ACCOUNT || type == CHECKING_ACCOUNT) {
+        if (type == ProductType.SAVINGS_ACCOUNT || type == ProductType.CHECKING_ACCOUNT) {
 
             if (reportModel.getProductSubtype() == ProductSubTypeEnum.CHRISTMAS_ACCOUNT) {
                 reportModel.setLabelHeaderTopBalance(CUOTA_SEMANAL);

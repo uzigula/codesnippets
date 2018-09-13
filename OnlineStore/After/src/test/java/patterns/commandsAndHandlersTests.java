@@ -1,15 +1,19 @@
 package patterns;
 
-import ch.qos.logback.core.net.ObjectWriter;
 import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.rules.ExpectedException;
 import org.springframework.test.util.*;
-import patterns.crosscuttingconcerns.*;
+
+import patterns.BasicResponse;
+import patterns.IAmCommandHandler;
+import patterns.LoginService;
+import patterns.crosscuttingconcerns.BGExpectedException;
+import patterns.crosscuttingconcerns.LogDecoratorHandler;
+import patterns.crosscuttingconcerns.SecurityDecoratorHandler;
 import patterns.sample.*;
-import reports.ClassNotImplementedException;
 
 import static org.mockito.Mockito.*;
 

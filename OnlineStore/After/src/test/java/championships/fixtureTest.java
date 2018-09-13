@@ -7,7 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class fixtureTest {
+public class
+fixtureTest {
 
     @Test
     public void CreateAFixture(){
